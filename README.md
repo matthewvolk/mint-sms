@@ -1,6 +1,6 @@
 # Daily Mint SMS Message
 
-## Description:
+## Project Background/TODO:
 #### THE PROBLEM: 
 I love receiving a text message every morning from Chase Bank containing the balance of my checking account. I dove into my personal account settings to see if I could schedule a message to be sent to me with the other account balances on my account, only to realize that checking was the only account this was possible with. 
 
@@ -8,6 +8,10 @@ I love receiving a text message every morning from Chase Bank containing the bal
 Using a library called mintapi, I was able to scrape the account data living in my Mint account. The goal is to send a text message through Twillio with the balance of every single account in my Mint account every single morning.
 
 #### CURRENT PROGRESS:
+* Script prompts user for username and password
+* Script returns value of account names and account balances
+* Script only runs on local
+* No Twillio integrations
 
 #### TO DO:
 * Bypass 2-Factor-Auth ...legally
@@ -25,3 +29,6 @@ Using a library called mintapi, I was able to scrape the account data living in 
 
 Running the script from the terminal will initiate the following sequence of events:
 
+1. Script will prompt user for username and password
+2. Script will use Selenium to login to Mint account from Chrome GUI
+3. Script will return the value of account_json to terminal screen
