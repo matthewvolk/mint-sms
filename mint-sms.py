@@ -6,6 +6,9 @@ mint_password = input('Please enter your Mint password: ')
 mint = mintapi.Mint(mint_username, mint_password)
 account_json = mint.get_accounts()
 
-print(account_json[0]['accountName'], end=' - ')
-print(account_json[0]['fiLoginDisplayName'])
-print((account_json[0]['currentBalance']))
+for i in range(0, len(account_json)):
+  if (account_json[i]['currentBalance'] != 0):
+    print(account_json[i]['accountName'], end=' - ')
+    print(account_json[i]['fiLoginDisplayName'])
+    print('${:,.2f}'.format((account_json[i]['currentBalance'])))
+    print('-----------------------')
