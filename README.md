@@ -11,20 +11,21 @@ Using a library called mintapi, I was able to scrape the account data living in 
 * Script prompts user for username and password
 * Script returns value of account names and account balances
 * Script only runs on local
-* No Twillio integrations
 
 #### TO DO:
 * Bypass 2-Factor-Auth ...legally
-* Test to see if my account balances are refreshed automatically so that in the morning, I am provided with the most up to date balances. If this is not the case, I will need to use the built in class method mint.initiate_account_refresh() before the script runs every day. 
-* Figure out how to run this from an AWS serverless instance. Then test the same functionality on Google Cloud Platform and Microsoft Azure to measure cost and performance benefits. 
-* Figure out how to run Python cron jobs from the cloud server
-* Figure out how to run web-scraping jobs from a cloud server. I guarantee there are going to be huge issues with the package dependencies being moved from running on my local to running on a cloud. 
+* Utilize mint.initiate_account_refresh() before the script runs every day to refresh account balances. Cron this, so that it runs at 1:00 AM daily.  
+* Figure out how to run this from an AWS serverless instance. Then test the same functionality on Google Cloud Platform and Microsoft Azure to measure cost and performance benefits. [Currently WIP: AWS]
+* Figure out how to run Python cron jobs from the cloud server.
+* Figure out how to run web-scraping jobs from a cloud server. I guarantee there are going to be huge issues with the package dependencies being moved from running on my local to running on a cloud. Trying to solve this by localizing the mintapi package
 
 
 ## Usage:
 
 ```
 1. $ git clone
+2. $ cd mint-sms/
+3. $ python3 subprocess-mint.py
 ```
 
 Running the script from the terminal will initiate the following sequence of events:
