@@ -1,7 +1,7 @@
 import mintapi
 import getpass
 
-mint_username = input('Please enter your Mint username: ')
+mint_username = input('Please enter your Mint email: ')
 mint_password = getpass.getpass('Please enter your Mint password: ')
 
 mint = mintapi.Mint(mint_username, mint_password)
