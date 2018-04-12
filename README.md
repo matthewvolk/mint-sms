@@ -13,12 +13,16 @@ Using a library called mintapi, I was able to scrape the account data living in 
 * Script only runs on local
 
 #### TO DO:
-* Bypass 2-Factor-Auth ...legally
+* Migrate project to Scrapy
+
 * Utilize mint.initiate_account_refresh() before the script runs every day to refresh account balances. Cron this, so that it runs at 1:00 AM daily.  
 * Figure out how to run this from an AWS serverless instance. Then test the same functionality on Google Cloud Platform and Microsoft Azure to measure cost and performance benefits. [Currently WIP: AWS]
 * Figure out how to run Python cron jobs from the cloud server.
 * Figure out how to run web-scraping jobs from a cloud server. I guarantee there are going to be huge issues with the package dependencies being moved from running on my local to running on a cloud. Trying to solve this by localizing the mintapi package
 
+#### Issues/Security Concerns:
+* 2-Factor-Auth prevents a reliable login after cookie expires.
+* Chrome is not run in headless mode. Takes a huge amount of CPU resources.
 
 ## Usage:
 
