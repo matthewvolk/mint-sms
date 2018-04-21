@@ -1,7 +1,6 @@
 import mintapi
 import subprocess
 import json
-import getpass
 import config
 
 # Format cmd string to inject into Python subprocess
