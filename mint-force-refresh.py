@@ -1,3 +1,5 @@
+# Run this file to force account data refresh
+
 import mintapi
 import config
 import time
