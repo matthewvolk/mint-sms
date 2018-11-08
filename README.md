@@ -26,10 +26,16 @@ Using a library called mintapi, I was able to scrape the account data living in 
 
 ## Usage:
 
+Retrieve Mint Account Balances via Terminal:
 ```
 1. $ git clone
 2. $ cd mint-sms/
-3. $ python3 subprocess-mint.py
+3. $ python3 main.py
+```
+
+Force Mint Account Balances refresh:
+```
+1. python3 mint-force-refresh.py
 ```
 
 Running the script from the terminal will initiate the following sequence of events:
