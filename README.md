@@ -35,7 +35,7 @@ Retrieve Mint Account Balances via Terminal:
 
 Force Mint Account Balances refresh:
 ```
-1. python3 mint-force-refresh.py
+1. $ python3 mint-force-refresh.py
 ```
 
 Running the script from the terminal will initiate the following sequence of events:
