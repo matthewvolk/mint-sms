@@ -1,5 +1,7 @@
 # Daily Mint SMS Message
 
+![mint-sms](https://i.imgur.com/crOjH8m.png "mint-sms")
+
 ## Project Background/TODO:
 #### THE PROBLEM: 
 I love receiving a text message every morning from Chase Bank containing the balance of my checking account. I dove into my personal account settings to see if I could schedule a message to be sent to me with the other account balances on my account, only to realize that checking was the only account this was possible with. 

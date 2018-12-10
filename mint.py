@@ -3,6 +3,15 @@ import subprocess
 import json
 import config
 
+print("""
+   ____ ___  (_)___  / /_      _________ ___  _____
+  / __ `__ \/ / __ \/ __/_____/ ___/ __ `__ \/ ___/
+ / / / / / / / / / / /_/_____(__  ) / / / / (__  ) 
+/_/ /_/ /_/_/_/ /_/\__/     /____/_/ /_/ /_/____/
+
+Opening browser window...
+""")
+
 # Format cmd string to inject into Python subprocess
 cmd = "mintapi '{}' '{}' --accounts".format(config.mint_email, config.mint_pass)
 
