@@ -1,6 +1,6 @@
 # Daily Mint SMS Message
 
-![mint-sms](https://i.imgur.com/crOjH8m.png "mint-sms")
+![mint-sms](https://i.imgur.com/714zf52.png "mint-sms")
 
 ## Project Background/TODO:
 #### THE PROBLEM: 
