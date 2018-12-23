@@ -22,6 +22,9 @@ Using a library called mintapi, I was able to scrape the account data living in 
 * Figure out how to run Python cron jobs from the cloud server.
 * Figure out how to run web-scraping jobs from a cloud server. I guarantee there are going to be huge issues with the package dependencies being moved from running on my local to running on a cloud. Trying to solve this by localizing the mintapi package
 
+#### Bookmarks
+- https://www.twilio.com/blog/2017/06/check-daily-spending-sms-python-plaid-twilio.html
+
 #### Issues/Security Concerns:
 * 2-Factor-Auth prevents a reliable login after cookie expires.
 * Chrome is not run in headless mode. Takes a huge amount of CPU resources.
