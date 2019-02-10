@@ -13,9 +13,10 @@ Opening browser window...
 """)
 
 # Format cmd string to inject into Python subprocess
-cmd = "mintapi '{}' '{}' --accounts".format(config.mint_email, config.mint_pass)
+cmd = "mintapi '{}' '{}' --accounts --headless".format(config.mint_email, config.mint_pass)
 
-# Store class method value in output variable
+# Store command in a variable "output"
+# TODO make this a try/catch
 output = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
 
 # Read output value and convert to bytestring
