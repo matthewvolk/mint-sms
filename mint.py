@@ -12,17 +12,12 @@ print("""
 Opening browser window...
 """)
 
-# Format cmd string to inject into Python subprocess
 cmd = "mintapi '{}' '{}' --accounts --headless".format(config.mint_email, config.mint_pass)
 
-# Store command in a variable "output"
 # TODO make this a try/catch
 output = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
 
-# Read output value and convert to bytestring
 jsonS = output.communicate()
-
-# Decode bytestring into JSON data Array object
 account_json = json.loads(jsonS[0].decode('utf-8'))
 
 for i in range(0, len(account_json)):
